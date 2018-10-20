@@ -42,7 +42,7 @@
 <script>
 <script language="javascript" type="text/javascript">
 
-var WebSocket = new WebSocket("wss://leejongseop.github.io/pusan/index.html");
+var WebSocket = new WebSocket("https://leejongseop.github.io/pusan/index.html");
 WebSocket.send("송신 메시지");
 WebSocket.onmessage = function(e){ alert(e.data);}
 webSocket.onopen = function(e){ alert("Connect");}
