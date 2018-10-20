@@ -3,9 +3,41 @@
 <head>
   <title>WEB1 - Welcome</title>
   <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 </head>
 <body>
-  <h1><a href="index.html">CHOOSE</a></h1>
+  <h1><a href="index.html">CHOOSE</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <script type="text/javascript">
+    <!--
+        setInterval("dpTime()",1000);
+        function dpTime(){
+           var now = new Date();
+            hours = now.getHours();
+            minutes = now.getMinutes();
+            seconds = now.getSeconds();
+
+            if (hours > 12){
+                hours -= 12;
+            ampm = "오후 ";
+            }else{
+                ampm = "오전 ";
+            }
+            if (hours < 10){
+                hours = "0" + hours;
+            }
+            if (minutes < 10){
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10){
+                seconds = "0" + seconds;
+            }
+    document.getElementById("dpTime").innerHTML = ampm + hours + ":" + minutes + ":" + seconds;
+        }
+    //-->
+    </script>
+    <span id="dpTime">오후 00:00:00</span>  
+   </h1>
+  <hr>
     <h2>click!!</h2>
   <ol>
     <li><a href="1.html">Detector1</a></li>
