@@ -38,6 +38,25 @@
     <span id="dpTime">오후 00:00:00</span>
    </h1>
   <hr>
+
+<script>
+<script language="javascript" type="text/javascript">
+
+var WebSocket = new WebSocket("wss://leejongseop.github.io/pusan/index.html");
+WebSocket.send("송신 메시지");
+WebSocket.onmessage = function(e){ alert(e.data);}
+webSocket.onopen = function(e){ alert("Connect");}
+WebSocket.onclose = function(e){ alert("Close");}
+
+
+</script>
+
+
+
+
+
+
+
     <h2>click!!</h2>
   <ol>
     <li><a href="1.html">Detector1</a></li>
